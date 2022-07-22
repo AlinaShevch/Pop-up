@@ -1,0 +1,59 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Layout 2</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="modal-box">
+    <form class="modal-box__container">
+      <h1 class="modal-box__title">Create New task</h1>
+      <div class="modal-box__task">
+        <input class="modal-box__task-title" id="title" type="text" placeholder="Title">
+        <span class="modal-box__task-symbols" id="symbols">00/100</span>
+      </div>
+      <button class="modal-box__description-button">Click to add Description</button>
+      <div class="modal-box__label-color">
+        <span class="modal-box__label">Label color</span>
+        <input class="modal-box__color" id="color1" type="radio" name="color">
+        <label for="color1" class="grey"></label>
+        <input class="modal-box__color violet" id="color2" type="radio" name="color">
+        <label for="color2" class="violet"></label>
+        <input class="modal-box__color coral" id="color3" type="radio" name="color">
+        <label for="color3" class="coral"></label>
+        <input class="modal-box__color black" id="color4" type="radio" name="color">
+        <label for="color4" class="black"></label>
+        <input class="modal-box__color yellow" id="color5" type="radio" name="color">
+        <label for="color5" class="yellow"></label>
+      </div>
+      <div class="modal-box__selector-container">
+        <img src="./images/user.png">
+        <select class="modal-box__selector">
+          <option>Select Assignee</option>
+        </select>
+      </div>
+      <div class="modal-box__date-container">
+        <div class="modal-box__input-container">
+          <img src="./images/calendar.png">
+          <input class="modal-box__date" type="text" placeholder="dd-mm-yy">
+        </div>
+        <div class="modal-box__input-container">
+          <img src="./images/calendar.png">
+          <input class="modal-box__date" type="text" placeholder="dd-mm-yy">
+        </div>
+      </div>
+      <div class="modal-box__button-container">
+        <button class="modal-box__cancel-button">Cancel</button>
+        <button class="modal-box__save-button">Save</button>
+      </div>
+    </form>
+  </div>
+  <script type="module" src="./js/index.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+
+</html>
